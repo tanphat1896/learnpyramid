@@ -1,0 +1,10 @@
+{% extends 'layout.jinja2' %}
+{% block subtitle %}{{ page.name }}{% endblock subtitle %}
+{% block content %}
+    <a href="{{ edit_url }}">
+        Edit this page
+    </a>
+    <p>{{ page.data }}</p>
+    <p>Viewing <strong>{{ page.name }}</strong> created by <strong>{{ page.creator.name }}</strong></p>
+    <a href="{{ request.route_url('view_page', pagename='FrontPage') }}">Go back</a>
+{% endblock content %}

@@ -1,0 +1,3 @@
+[run]
+source = learning
+omit = learning/test*
